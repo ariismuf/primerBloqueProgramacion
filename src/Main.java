@@ -169,8 +169,42 @@ public class Main {
                                     e.printStackTrace();
                                 }
 
-                                System.out.println("Sigues tu camino tranquilamente y llegas a una casa a oscuras,\nya casi estas fuera del bosque, la casa es el limite,\nparece que estaban celebrando un cumple\n la linterna se queda sin pilas.");
-                                System.out.println("Vas a entrar en la casa, que actitud prefieres?");
+                                System.out.println("Sigues tu camino y llegas a una casa a oscuras,\nya casi estas fuera del bosque, la casa es el limite,\nparece que estaban celebrando un cumple\n la linterna se queda sin pilas.");
+                                System.out.println("Que haces");
+                                boolean flag2 = false;
+                                while (flag2 == false) {
+                                    System.out.println("----------------");
+
+                                    System.out.println("1. Entras en la casa");
+                                    System.out.println("2. La rodeas y sales a la calle principal");
+                                    if (sc.hasNextInt()) {
+                                        camino = sc.nextInt();}else  {
+                                        sc.nextLine();
+                                    }
+                                    if (camino != 1 && camino != 2) {
+                                        System.out.println("Elige un numero entre los anteriores");
+                                    } else {
+                                        flag2 = true;
+
+                                    }
+
+                                    switch (camino) {
+
+                                        case 1:
+                                            System.out.println("Entras y descubres que estan todos tus amigos, era una fiesta sorpresa para tu cumple\npero no salió como esperaban y ahora eres un asesino.");
+                                            System.out.println("Has ido a la carcel porque has confesado y te han detenido, fin del juego");
+                                            flag2 = true;
+                                            break;
+
+                                        case 2:
+
+                                            System.out.println("Rodeas la casa y te vas a la calle principal.\nSigues caminando y llega una patrulla de policias que te detienen por asesinato.\nFin del juego.");
+
+                                            flag2 = true;
+                                            break;
+                                    }
+                                }
+
 
                                 opcion = true;
                                 break;
@@ -248,6 +282,50 @@ public class Main {
                                     Thread.sleep(2000);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
+                                }
+
+                                System.out.println("Sigues el camino con tu mejor amigo y de repente aparece un lobo");
+                                boolean flag2 = false;
+                                while (flag2 == false) {
+                                    System.out.println("----------------");
+
+                                    System.out.println("1. Le deslumbras con la linterna");
+                                    System.out.println("2. Le lanzas el cuchillo");
+                                    if (sc.hasNextInt()) {
+                                        camino = sc.nextInt();}else  {
+                                        sc.nextLine();
+                                    }
+                                    if (camino != 1 && camino != 2) {
+                                        System.out.println("Elige un numero entre los anteriores");
+                                    } else {
+                                        flag2 = true;
+
+                                    }
+
+                                    switch (camino) {
+
+                                    case 1:
+                                        System.out.println("Despues de darle con la linterna se ha asustado y se ha ido corriendo, ha habido suerte\nPor otra parte la linterna se ha quedado sin bateria");
+
+                                        try {
+                                            Thread.sleep(2000);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                        System.out.println("Llegas a una casa y resulta que te estan esperando todos tus amigos\nte han hecho una fiesta sorpresa por tu cumple, Ha sido la mejor fiesta de tu vida.");
+                                        System.out.println("Fin del juego.");
+
+                                        flag2 = true;
+                                        break;
+
+                                    case 2:
+
+                                        System.out.println("Le has alcanzado con el cuchillo y se lo has clavado, se ha enfadado y os a matado, fin del juego.");
+
+                                        flag2 = true;
+                                        break;
+
+                                    }
                                 }
                                 flag = true
                                 ;
