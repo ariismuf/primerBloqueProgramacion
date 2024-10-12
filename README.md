@@ -8,8 +8,8 @@ La idea de esta aventura es un paseo en un bosque oscuro. A través de tus decis
 Tu objetivo es navegar por el bosque y tomar decisiones que te ayuden a salir sin sufrir muchos daños. Las elecciones que realices influirán en el resultado de la aventura.
 
 ## Estructura del Juego
-- El juego no es muy largo y consiste en repetir la misma mecánica una y otra vez.
-- Las decisiones tomadas en cada repetición afectarán tu progreso y los resultados que obtendrás.
+- El juego no es muy largo ya que consiste en repetir el codigo una y otra vez.
+- Las decisiones tomadas afectarán tu progreso y los resultados que obtendrás.
 
 ## Archivos
 Todos los archivos relacionados con el juego se encuentran en la rama `master`.
