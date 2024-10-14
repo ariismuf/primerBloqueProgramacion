@@ -265,7 +265,7 @@ public class Main {
 
                             case 1:
 
-                                System.out.println("has ido demasiado rapido, has echo mucho ruido y te persiguen los lobos,\nya sabes como has acabado...");
+                                System.out.println("has ido demasiado rapido, has hecho mucho ruido y te persiguen los lobos,\nya sabes como has acabado...");
                                 try {
                                     Thread.sleep(2000);
                                 } catch (InterruptedException e) {
