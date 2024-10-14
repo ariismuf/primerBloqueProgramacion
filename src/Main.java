@@ -6,7 +6,7 @@ public class Main {
         // Introoduccion breve
         Scanner sc = new Scanner(System.in);
         int camino = 0;
-        System.out.println("Bienvenido a la Libercontingencia.");
+        System.out.println("Bienvenido al bosque oscuro.");
 
 
         // El siguiente try catch es un temporizador para que el codigo vaya un poco mas despacio cuando lo ponga
