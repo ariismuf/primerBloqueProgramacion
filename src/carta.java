@@ -23,6 +23,6 @@ public class carta {
 
     @Override
     public String toString() {
-        return valor + de + palo;
+        return valor + " de " + palo;
     }
 }
